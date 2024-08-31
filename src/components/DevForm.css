@@ -1,0 +1,809 @@
+
+.dev-form{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 5px;
+    color: #fff;
+}
+.photo-profile{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.list-tecnologies{
+  margin: 5px auto;
+  list-style: none;
+  display:flex ;
+  justify-content: space-between;
+}
+.list-tecnologies span{
+  cursor: pointer;
+  color: #9c9c9c;
+  font-weight: bold;
+  opacity: .7;
+  transition: .4s;
+}
+.list-tecnologies span:hover{
+ color: red;
+ opacity: 1;
+}
+.dev-form h1{
+color: #fff;
+text-align: center;
+}
+.form{
+    height: 88%;
+    width: 100%;
+}
+.dev-form input{
+    background-color: #0c0c0c;
+    border: none;
+    border-bottom: 2px solid #3991a7;
+padding: 2px;
+color: #9c9c9c;
+}
+.information{
+ 
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.file-btn{
+    display: none;
+}
+.custom-file {
+    transition: .4s;
+    width: 200px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: lighter;
+    color: #fff;
+    background-color: #1e1e1e;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+  }
+  .custom-file:hover {
+    background: rgb(91,180,174);
+    background: linear-gradient(352deg, rgba(91,180,174,1) 0%, rgba(20,70,73,1) 100%);
+    font-weight: bold;  
+  }
+/* Mobile */
+@media (max-width:428px) {
+  .form{
+    overflow-y:hidden ;
+    overflow-y: scroll;
+   }
+    .dev-form h1{
+        font-size: 20px;
+    }
+    .image-container{
+
+        margin: 5px auto;
+        width: 100px;
+        height: 100px;
+        border: 1px solid #3991a7;
+        border-radius: 11px;
+    }
+    .image-container img{
+        width: 100%;
+    }
+    .image-section{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .image-section label{
+        margin:  10px auto;
+        width: 140px;
+        
+    
+    }
+    .information{
+     padding: 5px;   
+    }
+    .dev-name{
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .dev-categorie{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 90%;
+        text-align: center;
+        margin:15px auto;
+        gap: 2px;
+    }
+    .dev-categorie label{
+        font-weight: bold;
+        width: 40%;
+        align-items: center;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .dev-categorie label input{
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+    }
+    .dev-categorie .radio-mark {
+        height: 10px;
+        width: 10px;
+        background-color: #1e798000;
+        border-radius: 30%;
+        display: inline-block;
+        position: relative;
+        margin-right: 10px;
+        border: .5px solid #ccc;
+      }
+      .dev-categorie input:checked + .radio-mark {
+        background-color: #2e98a0;
+        border-color: #268596;
+      }
+      
+      .dev-tecnologies{
+        width: 90%;
+        margin: 20px auto;
+      }
+      .tecnologies{
+        display: flex;
+        justify-content: start;
+        gap: 10px;
+      }
+      .tecnologies input{
+        width: 200px;
+       
+      }
+      .tecnologies .add-btn{
+        width: 70px;
+        border: none;
+        background-color: #1e1e1e ;
+        color: #fff;
+        font-weight: lighter;
+        cursor: pointer;
+        transition: .2s;
+        
+      }
+      .tecnologies .add-btn:hover{
+        background: rgb(91,180,174);
+        background: linear-gradient(352deg, rgba(91,180,174,1) 0%, rgba(20,70,73,1) 100%);
+        font-weight: bold;  
+    }
+    .dev-adicionais{
+        width: 90%;
+        margin: 20px auto;
+        display: flex;
+    }
+    .dev-adicionais input{
+        margin: 2px;
+    }
+    .dev-nivel label{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: bold;
+    }
+    .dev-nivel label input{
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+    }
+    .dev-nivel .radio-mark {
+        height: 10px;
+        width: 10px;
+        background-color: #1e798000;
+        border-radius: 30%;
+        display: inline-block;
+        position: relative;
+        border: .5px solid #ccc;
+      }
+      .dev-nivel input:checked + .radio-mark {
+        background-color: #2e98a0;
+        border-color: #268596;
+      }
+      .action{
+        width: 90%;
+        margin: 0 auto;
+      }
+      .action input{
+        padding: 10px;
+        width: 100px;
+        border: none;
+        background-color: #1e1e1e ;
+        color: #fff;
+        font-weight: lighter;
+        cursor: pointer;
+        transition: .2s;
+      }
+      .action input:hover{
+        background: rgb(91,180,174);
+        background: linear-gradient(352deg, rgba(91,180,174,1) 0%, rgba(20,70,73,1) 100%);
+        font-weight: bold;  
+      }
+
+
+}
+/* Tablet */
+@media (min-width:800px) and (max-width:1279px) {
+    .form{
+        width: 90%;
+        margin: 0 auto;
+        overflow-y:hidden ;
+        overflow-y: hidden;
+        display: flex;
+        justify-content: space-between;
+       }
+        .dev-form h1{
+            padding: 10px;
+            font-size: 30px;
+        }
+        .image-container{
+          
+            margin: 5px auto;
+            width: 200px;
+            height: 200px;
+            border: 1px solid #3991a7;
+            border-radius: 11px;
+        }
+        .image-container img{
+            width: 100%;
+        }
+        .image-section{
+            padding: 10px; 
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+        }
+        .image-section label{
+            margin:  10px auto;
+            width: 140px;
+        
+        }
+        .information{
+         padding: 10px;   
+        }
+        .dev-name{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 90%;
+            margin: 0 auto;
+        }
+        .dev-name input{
+            width: 100%;
+            height: 30px;
+        }
+        .dev-categorie{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 90%;
+            text-align: start;
+            margin: 20px auto;
+            gap: 10px;
+        }
+        .dev-categorie label{
+            font-weight: bold;
+            width: 40%;
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+        }
+        .dev-categorie label input{
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+        }
+        .dev-categorie .radio-mark {
+            height: 10px;
+            width: 10px;
+            background-color: #1e798000;
+            border-radius: 30%;
+            display: inline-block;
+            position: relative;
+            margin-right: 10px;
+            border: .5px solid #ccc;
+          }
+          .dev-categorie input:checked + .radio-mark {
+            background-color: #2e98a0;
+            border-color: #268596;
+          }
+          
+          .dev-tecnologies{
+            width: 90%;
+            margin: 25px auto;
+          }
+          .tecnologies{
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+          }
+          .tecnologies input{
+            width: 200px;
+            height: 30px;
+           
+          }
+          .tecnologies .add-btn{
+            width: 70px;
+            border: none;
+            background-color: #1e1e1e ;
+            color: #fff;
+            font-weight: lighter;
+            cursor: pointer;
+            transition: .2s;
+            
+          }
+          .tecnologies .add-btn:hover{
+            background: rgb(91,180,174);
+            background: linear-gradient(352deg, rgba(91,180,174,1) 0%, rgba(20,70,73,1) 100%);
+            font-weight: bold;  
+        }
+        .dev-adicionais{
+            width: 90%;
+            margin: 20px auto;
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        .radio-nivel{
+            width: 20px;
+        }
+        .dev-adicionais input{
+            margin: 2px;
+            width:80%;
+            height: 30px;
+        }
+        .dev-nivel{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+           
+            gap: 10px;
+        }
+        .dev-nivel label{
+            width: 40%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: bold;
+        }
+        .dev-nivel label input{
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+        }
+        .dev-nivel .radio-mark {
+            height: 10px;
+            width: 10px;
+            background-color: #1e798000;
+            border-radius: 30%;
+            display: inline-block;
+            position: relative;
+            border: .5px solid #ccc;
+          }
+          .dev-nivel input:checked + .radio-mark {
+            background-color: #2e98a0;
+            border-color: #268596;
+          }
+          .action{
+            width: 90%;
+            margin: 20px auto;
+            text-align: end;
+          }
+          .action input{
+            padding: 10px;
+            width: 100px;
+            border: none;
+            background-color: #1e1e1e ;
+            color: #fff;
+            font-weight: lighter;
+            cursor: pointer;
+            transition: .2s;
+          }
+          .action input:hover{
+            background: rgb(91,180,174);
+            background: linear-gradient(352deg, rgba(91,180,174,1) 0%, rgba(20,70,73,1) 100%);
+            font-weight: bold;  
+          }
+    
+    
+}
+/* Desktop */
+@media(min-width:1280px) and (max-width:1919px){
+    .form{
+        width: 90%;
+        margin: 0 auto;
+        overflow-y:hidden ;
+        overflow-y: hidden;
+        display: flex;
+        justify-content: space-between;
+       }
+        .dev-form h1{
+            padding: 10px;
+            font-size: 30px;
+        }
+        .image-container{
+          
+            margin: 5px auto;
+            width: 200px;
+            height: 200px;
+            border: 1px solid #3991a7;
+            border-radius: 11px;
+        }
+        .image-container img{
+            width: 100%;
+        }
+        .image-section{
+            padding: 10px; 
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+        }
+        .image-section label{
+            margin:  10px auto;
+            width: 140px;
+        
+        }
+        .information{
+         padding: 10px;   
+        }
+        .dev-name{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 90%;
+            margin: 0 auto;
+        }
+        .dev-name input{
+            width: 100%;
+            height: 30px;
+        }
+        .dev-categorie{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 90%;
+            text-align: start;
+            margin: 20px auto;
+            gap: 10px;
+        }
+        .dev-categorie label{
+            font-weight: bold;
+            width: 40%;
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+        }
+        .dev-categorie label input{
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+        }
+        .dev-categorie .radio-mark {
+            height: 10px;
+            width: 10px;
+            background-color: #1e798000;
+            border-radius: 30%;
+            display: inline-block;
+            position: relative;
+            margin-right: 10px;
+            border: .5px solid #ccc;
+          }
+          .dev-categorie input:checked + .radio-mark {
+            background-color: #2e98a0;
+            border-color: #268596;
+          }
+          
+          .dev-tecnologies{
+            width: 90%;
+            margin: 25px auto;
+          }
+          .tecnologies{
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+          }
+          .tecnologies input{
+            width: 200px;
+            height: 30px;
+           
+          }
+          .tecnologies .add-btn{
+            width: 70px;
+            border: none;
+            background-color: #1e1e1e ;
+            color: #fff;
+            font-weight: lighter;
+            cursor: pointer;
+            transition: .2s;
+            
+          }
+          .tecnologies .add-btn:hover{
+            background: rgb(91,180,174);
+            background: linear-gradient(352deg, rgba(91,180,174,1) 0%, rgba(20,70,73,1) 100%);
+            font-weight: bold;  
+        }
+        .dev-adicionais{
+            width: 90%;
+            margin: 20px auto;
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        .radio-nivel{
+            width: 20px;
+        }
+        .dev-adicionais input{
+            margin: 2px;
+          
+            height: 30px;
+        }
+        .dev-nivel{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+           
+            gap: 10px;
+        }
+        .dev-nivel label{
+            width: 40%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: bold;
+        }
+        .dev-nivel label input{
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+        }
+        .dev-nivel .radio-mark {
+            height: 10px;
+            width: 10px;
+            background-color: #1e798000;
+            border-radius: 30%;
+            display: inline-block;
+            position: relative;
+            border: .5px solid #ccc;
+          }
+          .dev-nivel input:checked + .radio-mark {
+            background-color: #2e98a0;
+            border-color: #268596;
+          }
+          .action{
+            width: 90%;
+            margin: 20px auto;
+            text-align: end;
+          }
+          .action input{
+            padding: 10px;
+            width: 100px;
+            border: none;
+            background-color: #1e1e1e ;
+            color: #fff;
+            font-weight: lighter;
+            cursor: pointer;
+            transition: .2s;
+          }
+          .action input:hover{
+            background: rgb(91,180,174);
+            background: linear-gradient(352deg, rgba(91,180,174,1) 0%, rgba(20,70,73,1) 100%);
+            font-weight: bold;  
+          }
+    
+    
+}
+@media (min-width:1920px){
+    .form{
+        width: 90%;
+        margin: 0 auto;
+        overflow-y:hidden ;
+        overflow-y: hidden;
+        display: flex;
+        justify-content: space-between;
+       }
+        .dev-form h1{
+            padding: 15px;
+            font-size: 40px;
+        }
+        .image-container{
+          
+            margin: 5px auto;
+            width: 300px;
+            height: 300px;
+            border: 1px solid #3991a7;
+            border-radius: 11px;
+        }
+        .image-container img{
+            width: 100%;
+        }
+        .image-section{
+            padding: 10px; 
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+        }
+        .image-section label{
+            font-size: 18px;
+            border-radius: 0px;
+            margin:  10px auto;
+            width: 150px;
+        
+        }
+        .information{
+         padding: 10px; 
+         width: 60%;  
+        }
+        .dev-name{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 90%;
+            margin: 0 auto;
+        }
+        .dev-name input{
+            width: 100%;
+            height: 50px;
+            font-size: 20px;
+        }
+        .dev-categorie{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 90%;
+            text-align: start;
+            margin: 20px auto;
+            gap: 10px;
+        }
+        .dev-categorie h2{
+            font-size: 30px;
+        }
+        .dev-categorie label{
+            font-weight: bold;
+            font-size: 25px;
+            width: 40%;
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+        }
+        .dev-categorie label input{
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+        }
+        .dev-categorie .radio-mark {
+            height: 20px;
+            width: 20px;
+            cursor: pointer;
+            background-color: #1e798000;
+            border-radius: 30%;
+            display: inline-block;
+            position: relative;
+            margin-right: 10px;
+            border: .5px solid #ccc;
+          }
+          .dev-categorie input:checked + .radio-mark {
+            background-color: #2e98a0;
+            border-color: #268596;
+          }
+          
+          .dev-tecnologies{
+            width: 90%;
+            margin: 25px auto;
+          }
+          .dev-tecnologies h2{
+            font-size: 30px;
+          }
+          .tecnologies{
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+          }
+          .tecnologies input{
+            width: 300px;
+            height: 50px;
+            font-size: 20px;
+           
+          }
+          .tecnologies .add-btn{
+            width: 100px;
+            border: none;
+            background-color: #1e1e1e ;
+            color: #fff;
+            font-weight: lighter;
+            cursor: pointer;
+            transition: .2s;
+            
+          }
+          .tecnologies .add-btn:hover{
+            background: rgb(91,180,174);
+            background: linear-gradient(352deg, rgba(91,180,174,1) 0%, rgba(20,70,73,1) 100%);
+            font-weight: bold;  
+        }
+        .dev-adicionais{
+            width: 90%;
+            margin: 20px auto;
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        .radio-nivel{
+            width: 20px;
+        }
+        .dev-adicionais input{
+            margin: 2px;
+            height: 50px;
+            font-size: 20px;
+        }
+        .dev-nivel{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+           
+            gap: 10px;
+        }
+        .dev-nivel label{
+            font-size: 25px;
+            width:100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: bold;
+        }
+        .dev-nivel label input{
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+        }
+        .dev-nivel .radio-mark {
+            cursor: pointer;
+            height: 20px;
+            width: 20px;
+            background-color: #1e798000;
+            border-radius: 30%;
+            display: inline-block;
+            position: relative;
+            border: .5px solid #ccc;
+          }
+          .dev-nivel input:checked + .radio-mark {
+            background-color: #2e98a0;
+            border-color: #268596;
+          }
+          .action{
+            width: 90%;
+            margin: 20px auto;
+            text-align: end;
+          }
+          .action input{
+            height: 50px;
+            font-size: 16px;
+            padding: 10px;
+            width: 100px;
+            border: none;
+            background-color: #1e1e1e ;
+            color: #fff;
+            font-weight: lighter;
+            cursor: pointer;
+            transition: .2s;
+          }
+          .action input:hover{
+            background: rgb(91,180,174);
+            background: linear-gradient(352deg, rgba(91,180,174,1) 0%, rgba(20,70,73,1) 100%);
+            font-weight: bold;  
+          }
+    
+    
+}

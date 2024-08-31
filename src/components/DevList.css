@@ -1,0 +1,237 @@
+.list-container{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+.dev-list{
+    overflow-y: scroll;
+    height: 90%;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.dev-image{
+    height: 100%;
+}
+.list-container h1{
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+}
+.list-container a{
+    text-decoration: none;
+    color: #fff;
+}
+.active-dev{
+    cursor: pointer;
+    border-radius: 11px;
+    border-bottom: 2px solid #d9d9d9;
+    background: rgb(40,38,38);
+  background: linear-gradient(352deg, rgb(47, 102, 116) 0%, rgba(0,0,0,1) 100%);
+}
+.developer{
+    cursor: pointer;
+    border-radius: 11px;
+    border-bottom: 2px solid #d9d9d9;
+    background-color: transparent;
+}
+.developer:hover{
+    transition: .4s;
+    cursor: pointer;
+    border-radius: 11px;
+    border-bottom: 2px solid #d9d9d9;
+    background: rgb(40,38,38);
+  background: linear-gradient(352deg, rgb(52, 155, 180) 0%, rgb(0, 0, 0) 100%);
+}
+.developer h2,
+.developer p{
+    color: #fff; 
+    font-style: italic;
+}
+.developer p{
+    font-weight: lighter;
+}
+.developer p span{
+    font-weight: bold;
+}
+.active-dev h2,
+.active-dev p{
+    font-style: italic;
+    color: #fff; 
+}
+.active-dev p{
+    font-weight: lighter;
+}
+.active-dev p span{
+    font-weight: bold;
+}
+.not-exisit{
+    text-transform: uppercase;
+    text-align: center;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    color: #7e7c7c;
+}
+
+/* Mobile */
+@media (max-width:428px) {
+.dev-list{
+    height: 70%;
+}
+.developer{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 5px;
+    gap: 5px;
+}
+.developer img{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    }
+
+.active-dev{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 5px;
+    gap: 5px;
+}
+.active-dev img{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    }
+}
+
+  /* Tablet */
+  @media (min-width:800px) and (max-width:1279px) {
+    .dev-list{
+        height: 70%;
+    }
+    .developer{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: 5px;
+        gap: 5px;
+    }
+    .developer img{
+        width: 100px;
+        height: 100px;
+        border-radius: 10px;
+        }
+    
+    .active-dev{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: 5px;
+        gap: 5px;
+    }
+    .active-dev img{
+        width: 100px;
+        height: 100px;
+        border-radius: 10px;
+        }
+ 
+    .developer h2,
+    .active-dev h2{
+        font-size: 40px;
+    }
+    .developer p,
+    .active-dev p{
+        font-size: 30px;
+    }
+}
+  
+  /* Desktop */
+  @media(min-width:1280px) and (max-width:1919px){
+    .dev-list{
+        height: 80%;
+    }
+    .developer{
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: 5px;
+        gap: 5px;
+    }
+    .developer img{
+        width: 90px;
+        height: 90px;
+        border-radius: 10px;
+        }
+    
+    .active-dev{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: 5px;
+        gap: 5px;
+    }
+    .active-dev img{
+        width: 90px;
+        height: 90px;
+        border-radius: 10px;
+        }
+ 
+    .developer h2,
+    .active-dev h2{
+        font-size: 20px;
+    }
+    .developer p,
+    .active-dev p{
+        font-size: 15px;
+    }
+  }
+
+  @media (min-width:1920px){
+    .dev-list{
+        height: 85%;
+    }
+    .developer{
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: 5px;
+        gap: 5px;
+    }
+    .developer img{
+        width: 90px;
+        height: 90px;
+        border-radius: 10px;
+        }
+    
+    .active-dev{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: 5px;
+        gap: 5px;
+    }
+    .active-dev img{
+        width: 90px;
+        height: 90px;
+        border-radius: 10px;
+        }
+ 
+    .developer h2,
+    .active-dev h2{
+        font-size: 20px;
+    }
+    .developer p,
+    .active-dev p{
+        font-size: 15px;
+    }
+
+        }  

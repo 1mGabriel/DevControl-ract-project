@@ -1,0 +1,26 @@
+{
+  "developers": [
+    {
+      "photo": "https://avatars.githubusercontent.com/u/145507003?s=400&u=5944e6298bf9470dd3b764bf71daeaf7ee482d55&v=4",
+      "name": "Gabriel",
+      "lastName": "Mata Pereira",
+      "categorie": "Front-end",
+      "technologies": [
+        "Css",
+        "JavaScript",
+        "Html",
+        "React",
+        "Sass",
+        "Jquery",
+        "Git",
+        "GitHub",
+        "Gulp"
+      ],
+      "email": "gabriell.devs@gmail.com",
+      "tel": "19984510129",
+      "github": "1mGabriel",
+      "nivel": "Junior",
+      "id": "1"
+    }
+  ]
+}

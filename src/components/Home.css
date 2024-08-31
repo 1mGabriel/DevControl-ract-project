@@ -1,0 +1,78 @@
+.home{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.home h1{
+    color: #fff;
+}
+.home h2{
+    padding: 10px;
+     /* Primeiro passo: definir um degradê como fundo */
+  background-image: linear-gradient(to bottom, rgb(14, 103, 138), steelblue, turquoise);
+  
+  /* Segundo passo: apagar do fundo tudo que não estiver imediatamente atrás de texto */
+  background-clip: text;
+  -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
+
+  /* Terceiro passo: apagar o texto, deixando apenas o fundo atrás dele */
+  -webkit-text-fill-color: transparent;
+
+  /* Cor que contraste com o degradê, caso o navegador não suporte `background-clip: text` */
+  color: black;
+  
+}
+.home p{
+    padding: 10px;
+    color: #fff;
+    font-weight: lighter;
+}
+.home p span{
+    font-weight: bold;
+         /* Primeiro passo: definir um degradê como fundo */
+  background-image: linear-gradient(to bottom, rgb(14, 103, 138), steelblue, turquoise);
+  
+  /* Segundo passo: apagar do fundo tudo que não estiver imediatamente atrás de texto */
+  background-clip: text;
+  -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
+
+  /* Terceiro passo: apagar o texto, deixando apenas o fundo atrás dele */
+  -webkit-text-fill-color: transparent;
+
+  /* Cor que contraste com o degradê, caso o navegador não suporte `background-clip: text` */
+  color: black;
+}
+
+/* Mobile */
+@media (max-width:428px) {
+
+
+}
+/* Tablet */
+@media (min-width:800px) and (max-width:1279px) {
+    .home h1{
+        font-size: 60px;
+    }
+    .home h2{
+        font-size: 50px;
+    }
+    .home p{
+        font-size: 30px;
+    }
+}
+/* Desktop */
+@media(min-width:1280px){
+    .home h1{
+        font-size: 60px;
+    }
+    .home h2{
+        font-size: 50px;
+    }
+    .home p{
+        font-size: 30px;
+    }
+}
